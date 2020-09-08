@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD7B65C"/>
+                <GradientStop Color="#FFBE2626" Offset="0.444"/>
+                <GradientStop Color="#FF26BEB5" Offset="0.777"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btn" Content="Click Me" HorizontalAlignment="Left" Margin="96,51,0,0" VerticalAlignment="Top" Height="63" Width="153" IsDefault="True" Click="btn_Click"/>
+        <TextBox x:Name="txtFavColor" HorizontalAlignment="Left" Height="37" Margin="193,165,0,0" Text="Textbox" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" KeyDown="txt_KeyDown"/>
+        <Label Content="Enter your favorite color:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="37" Width="162"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="37" Margin="194,233,0,0" Text="Textbox" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" KeyDown="txt_KeyDown"/>
+        <Label Content="Enter your name:" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top" Height="37" Width="162"/>
 
     </Grid>
 </Window>

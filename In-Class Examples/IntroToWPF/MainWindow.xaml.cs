@@ -23,6 +23,43 @@ namespace IntroToWPF
         public MainWindow()
         {
             InitializeComponent();
+
+            txtFavColor.Text = string.Empty;
+            txtName.Clear();
+            btn.IsEnabled = false;
+
+            
+
+
+
+
+
+        }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Info i = new Info();
+            i.FavColor = txtFavColor.Text;
+            i.Name = txtName.Text;
+            string message = $"Hey {i.Name}, that's cool your favorite color is {i.FavColor}!";
+            MessageBox.Show(message, "Welcome to MIS 3033!");
+        }
+
+        private bool ShouldWeEnableButtton()
+        {
+            bool result = false;
+            if (txtFavColor.Text != string.Empty && txtName.Text != string.Empty)
+            {
+                result = true;
+            }
+
+            return result;
+        }
+
+        private void txt_KeyDown(object sender, KeyEventArgs e)
+        {
+            btn.IsEnabled = ShouldWeEnableButtton();
         }
     }
 }
