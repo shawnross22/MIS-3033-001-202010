@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToWPF", "IntroToWPF\IntroToWPF.csproj", "{660312C1-D4DF-4A0B-A829-F9BE6D918529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToWPF", "IntroToWPF\IntroToWPF.csproj", "{660312C1-D4DF-4A0B-A829-F9BE6D918529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV Example", "CSV Example\CSV Example.csproj", "{C9F93F38-595A-4005-99EB-D64B06B429B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{660312C1-D4DF-4A0B-A829-F9BE6D918529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660312C1-D4DF-4A0B-A829-F9BE6D918529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660312C1-D4DF-4A0B-A829-F9BE6D918529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
