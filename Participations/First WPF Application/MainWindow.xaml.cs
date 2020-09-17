@@ -63,9 +63,6 @@ namespace First_WPF_Application
             btnCalculateAge.Background = Brushes.OrangeRed;
         }
 
-        private void btnCalculateAge_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }

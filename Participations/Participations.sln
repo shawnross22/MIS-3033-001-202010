@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "First WPF Application", "First WPF Application\First WPF Application.csproj", "{A9720FAB-74FF-4414-9D9A-083F4D75EEF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF - Classes", "WPF - Classes\WPF - Classes.csproj", "{079B73A1-6059-4DA1-BC04-C682088EB77C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A9720FAB-74FF-4414-9D9A-083F4D75EEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9720FAB-74FF-4414-9D9A-083F4D75EEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9720FAB-74FF-4414-9D9A-083F4D75EEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079B73A1-6059-4DA1-BC04-C682088EB77C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079B73A1-6059-4DA1-BC04-C682088EB77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079B73A1-6059-4DA1-BC04-C682088EB77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079B73A1-6059-4DA1-BC04-C682088EB77C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
