@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToWPF", "IntroToWPF\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV Example", "CSV Example\CSV Example.csproj", "{C9F93F38-595A-4005-99EB-D64B06B429B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_RickAndMorty", "JSON_RickAndMorty\JSON_RickAndMorty.csproj", "{BAD6B8C8-24E3-46F1-9702-CA8C18847680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F93F38-595A-4005-99EB-D64B06B429B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
