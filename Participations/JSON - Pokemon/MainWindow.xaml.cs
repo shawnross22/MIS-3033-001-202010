@@ -38,65 +38,64 @@ namespace JSON___Pokemon
             foreach (var poke in pokemonapi.results)
             {
                 cboPoke.Items.Add(poke);
-            }
 
-            PokeInfoAPI pokeInfoAPI;
-            string pokeInfoURL = "";
-            if (pokemonWasSelected == false)
-            {
-                Pokemon selectedPokemon = new Pokemon();
-                pokeInfoURL = selectedPokemon.url;
             }
-            
-            using (var client = new HttpClient())
-            {
-                    string pokeInfo = client.GetStringAsync(pokeInfoURL).Result;
-
-                    pokeInfoAPI = JsonConvert.DeserializeObject<PokeInfoAPI>(pokeInfo);
-            }
-            
 
             
         }
 
         private void cboPoke_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            bool pokemonWasSelected = true;
+            PokeInfoAPI pokeInfoAPI;
             Pokemon selectedpokemon = (Pokemon)cboPoke.SelectedItem;
-            PokeInfoAPI selectedInfo = selectedpokemon.url;
+            string pokeInfoURL = selectedpokemon.url;
+
+            using (var client = new HttpClient())
+            {
+                string pokeInfo = client.GetStringAsync(pokeInfoURL).Result;
+
+                pokeInfoAPI = JsonConvert.DeserializeObject<PokeInfoAPI>(pokeInfo);
+            }
             Uri uri;
-
-            if (button1wasClicked == false)
-            {
-                uri = new Uri(selectedInfo.sprites.front_default);
-                BitmapImage frontsprite = new BitmapImage(uri);
-                imgPoke.Source = frontsprite;
-                lblPokeInfo.Content = $"{selectedpokemon.name}, Height: {selectedInfo.height}, Weight {selectedInfo.weight}";
-            }
-            else if (button1wasClicked == true)
-            {
-                uri = new Uri(selectedPokeInfo.sprites.back_default);
-                BitmapImage backsprite = new BitmapImage(uri);
-                imgPoke.Source = backsprite;
-            }
-
-
+            uri = new Uri(pokeInfoAPI.sprites.front_default);
+            BitmapImage frontsprite = new BitmapImage(uri);
+            imgPoke.Source = frontsprite;
+            lblPokeInfo.Content = $"{selectedpokemon.name}, Height: {pokeInfoAPI.height}, Weight {pokeInfoAPI.weight}";
+            frontSpriteShowing = true;
         }
 
-        public bool button1wasClicked = false;
-        public bool pokemonWasSelected = false;
+        private bool frontSpriteShowing;
+        
         private void btnSprite_Click(object sender, RoutedEventArgs e)
         {
-            int i = 1;
-            i = i + 1;
-            if (i%2==0)
+            
+            PokeInfoAPI pokeInfoAPI;
+            Pokemon selectedpokemon = (Pokemon)cboPoke.SelectedItem;
+            string pokeInfoURL = selectedpokemon.url;
+
+            using (var client = new HttpClient())
             {
-                button1wasClicked = true;
+                string pokeInfo = client.GetStringAsync(pokeInfoURL).Result;
+
+                pokeInfoAPI = JsonConvert.DeserializeObject<PokeInfoAPI>(pokeInfo);
             }
-            else if (i % 2 == 1)
+            Uri uri;
+
+            if (frontSpriteShowing == true)
             {
-                button1wasClicked = false;
+                uri = new Uri(pokeInfoAPI.sprites.back_default);
+                BitmapImage backsprite = new BitmapImage(uri);
+                imgPoke.Source = backsprite;
+                frontSpriteShowing = false;
             }
-        }
+            else if (frontSpriteShowing == false)
+            {
+                uri = new Uri(pokeInfoAPI.sprites.front_default);
+                BitmapImage frontsprite = new BitmapImage(uri);
+                imgPoke.Source = frontsprite;
+                frontSpriteShowing = true;
+            }
+        
+    }
     }
 }
