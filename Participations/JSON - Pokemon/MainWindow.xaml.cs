@@ -57,7 +57,7 @@ namespace JSON___Pokemon
                 pokeInfoAPI = JsonConvert.DeserializeObject<PokeInfoAPI>(pokeInfo);
             }
             Uri uri;
-            uri = new Uri(pokeInfoAPI.sprites.front_default);
+            uri = new Uri(pokeInfoAPI.sprites.versions.generationi.yellow.front_default);
             BitmapImage frontsprite = new BitmapImage(uri);
             imgPoke.Source = frontsprite;
             lblPokeInfo.Content = $"{selectedpokemon.name}, Height: {pokeInfoAPI.height}, Weight {pokeInfoAPI.weight}";
@@ -83,14 +83,14 @@ namespace JSON___Pokemon
 
             if (frontSpriteShowing == true)
             {
-                uri = new Uri(pokeInfoAPI.sprites.back_default);
+                uri = new Uri(pokeInfoAPI.sprites.versions.generationi.yellow.back_default);
                 BitmapImage backsprite = new BitmapImage(uri);
                 imgPoke.Source = backsprite;
                 frontSpriteShowing = false;
             }
             else if (frontSpriteShowing == false)
             {
-                uri = new Uri(pokeInfoAPI.sprites.front_default);
+                uri = new Uri(pokeInfoAPI.sprites.versions.generationi.yellow.front_default);
                 BitmapImage frontsprite = new BitmapImage(uri);
                 imgPoke.Source = frontsprite;
                 frontSpriteShowing = true;

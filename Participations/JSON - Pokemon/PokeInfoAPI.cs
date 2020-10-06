@@ -17,6 +17,23 @@ namespace JSON___Pokemon
     {
         public string back_default { get; set; }
         public string front_default { get; set; }
+
+        public Versions versions { get; set; }
     }
-    
+
+    public class Versions
+    {
+        public Generationi generationi {get;set;}
+    }
+
+    public class Generationi
+    {
+        public Yellow yellow { get; set; }
+    }
+
+    public class Yellow
+    {
+        public string back_default { get; set; }
+        public string front_default { get; set; }
+    }
 }
