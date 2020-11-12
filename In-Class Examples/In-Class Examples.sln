@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV Example", "CSV Example\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_RickAndMorty", "JSON_RickAndMorty\JSON_RickAndMorty.csproj", "{BAD6B8C8-24E3-46F1-9702-CA8C18847680}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Example", "MVC_Example\MVC_Example.csproj", "{41C7E145-19D5-4459-87CD-89AE8F8DCF91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAD6B8C8-24E3-46F1-9702-CA8C18847680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C7E145-19D5-4459-87CD-89AE8F8DCF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C7E145-19D5-4459-87CD-89AE8F8DCF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C7E145-19D5-4459-87CD-89AE8F8DCF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C7E145-19D5-4459-87CD-89AE8F8DCF91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

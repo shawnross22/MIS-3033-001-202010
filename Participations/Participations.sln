@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON - Pokemon", "JSON - Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON - Chuck Norris Jokes", "JSON - Chuck Norris Jokes\JSON - Chuck Norris Jokes.csproj", "{74A889CE-9934-4F32-9876-5648C0605A46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes 3", "Classes 3\Classes 3.csproj", "{7757152E-A1FD-42F2-83E4-B6ACD837E7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_Beginner", "MVC_Beginner\MVC_Beginner.csproj", "{9BB8DDE9-227E-4D1A-9281-C82CB02D0400}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{74A889CE-9934-4F32-9876-5648C0605A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74A889CE-9934-4F32-9876-5648C0605A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74A889CE-9934-4F32-9876-5648C0605A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7757152E-A1FD-42F2-83E4-B6ACD837E7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7757152E-A1FD-42F2-83E4-B6ACD837E7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7757152E-A1FD-42F2-83E4-B6ACD837E7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7757152E-A1FD-42F2-83E4-B6ACD837E7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB8DDE9-227E-4D1A-9281-C82CB02D0400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB8DDE9-227E-4D1A-9281-C82CB02D0400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB8DDE9-227E-4D1A-9281-C82CB02D0400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB8DDE9-227E-4D1A-9281-C82CB02D0400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

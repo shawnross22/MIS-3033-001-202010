@@ -1,0 +1,33 @@
+﻿<Window x:Class="Classes_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Classes_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Height="33" Width="79"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="33" Margin="104,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Margin="353,10,0,0" VerticalAlignment="Top" Height="33" Width="79"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="33" Margin="432,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="Major:" HorizontalAlignment="Left" Margin="25,48,0,0" VerticalAlignment="Top" Height="33" Width="79"/>
+        <TextBox x:Name="txtMajor" HorizontalAlignment="Left" Height="33" Margin="104,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="GPA:" HorizontalAlignment="Left" Margin="353,49,0,0" VerticalAlignment="Top" Height="33" Width="79"/>
+        <TextBox x:Name="txtGPA" HorizontalAlignment="Left" Height="33" Margin="432,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="Street Number:" HorizontalAlignment="Left" Margin="25,120,0,0" VerticalAlignment="Top" Height="33" Width="95"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="25,87,0,0" VerticalAlignment="Top" Height="33" Width="79"/>
+        <TextBox x:Name="txtStreetNumber" HorizontalAlignment="Left" Height="33" Margin="125,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="Street Name:" HorizontalAlignment="Left" Margin="345,119,0,0" VerticalAlignment="Top" Height="33" Width="95"/>
+        <TextBox x:Name="txtStreetName" HorizontalAlignment="Left" Height="33" Margin="432,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="City:" HorizontalAlignment="Left" Margin="25,158,0,0" VerticalAlignment="Top" Height="33" Width="95"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Height="33" Margin="432,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <Label Content="State:" HorizontalAlignment="Left" Margin="345,159,0,0" VerticalAlignment="Top" Height="33" Width="95"/>
+        <Label Content="Zip Code:" HorizontalAlignment="Left" Margin="25,191,0,0" VerticalAlignment="Top" Height="33" Width="95"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="33" Margin="125,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="33" Margin="125,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="15"/>
+        <ListBox x:Name="lstInfo" Margin="10,248,10.333,9.667" MouseDoubleClick="lstInfo_MouseDoubleClick"/>
+        <Button x:Name="btnValidate" Content="Validate" HorizontalAlignment="Left" Height="72" Margin="668,152,0,0" VerticalAlignment="Top" Width="115" Click="btnValidate_Click"/>
+
+    </Grid>
+</Window>
